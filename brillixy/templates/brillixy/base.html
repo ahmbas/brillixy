@@ -23,6 +23,7 @@
 <body class="{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}">
     {% if not is_popup %}
     <!-- Header -->
+    {% block header %}
     <div id="header">
         <div class="container">
             <div class="row">
@@ -88,6 +89,7 @@
 
     </div>
     <!-- END Header -->
+    {% endblock %}
     {% endif %}
 
     {% block messages %}
