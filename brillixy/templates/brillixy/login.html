@@ -1,8 +1,9 @@
 {% extends "brillixy/base.html" %}
 {% load i18n %}
+{% load static %}
 
 {% block extrastyle %}
-    <link href="{{ STATIC_URL }}brillixy/css/login.css" rel="stylesheet" type="text/css" />
+    <link href='{% static 'brillixy/css/login.css' %}' rel="stylesheet" type="text/css" />
 {% endblock %}
 
 {% block breadcrumbs %}{% endblock %}
